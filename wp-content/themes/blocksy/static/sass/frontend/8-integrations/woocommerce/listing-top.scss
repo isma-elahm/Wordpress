@@ -1,0 +1,44 @@
+.woo-listing-top {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+
+	&:not(:empty) {
+		margin-bottom: 25px;
+	}
+
+	// results count
+	.woocommerce-result-count {
+		margin-bottom: 0;
+		color: var(--theme-text-color);
+	}
+
+	// woo ordering
+	.woocommerce-ordering {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-inline-start: auto;
+		position: relative;
+
+		select {
+			font-size: 14px;
+			height: 40px;
+			cursor: pointer;
+
+			@include media-breakpoint-down(sm) {
+				color: transparent;
+				width: 34px;
+				height: 34px;
+				padding: 0;
+				user-select: none;
+				background-image: none;
+			}
+		}
+
+		.ct-sort-icon {
+			position: absolute;
+			pointer-events: none;
+		}
+	}
+}

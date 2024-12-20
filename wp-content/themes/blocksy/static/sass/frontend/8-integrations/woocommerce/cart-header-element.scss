@@ -1,0 +1,14 @@
+.ct-header-cart {
+
+	[data-price="no"] .amount {
+		display: none;
+	}
+
+	// hide cart element if no items are added to cart
+	&[data-cart="hide-empty"] {
+
+		&:has([data-count="0"]) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.ct-meta-box {
+
+	.ct-control,
+	.ct-controls-group {
+
+		&[data-design='inline:start'] {
+			display: grid;
+			grid-template-columns: 20% min(calc(80% - 10px), 700px);
+			align-items: start;
+			grid-column-gap: 10px;
+
+			.ct-option-description {
+				grid-column: 2/2;
+			}
+
+			.ct-option-switch {
+				margin-inline-start: initial;
+			}
+		}
+	}
+
+
+	// tabs
+	.ct-tabs {
+		--tabs-pills-active-background-color: #fff;
+		--tabs-pills-inactive-background-color: #f3f3f3;
+		--tabs-pills-max-width: 120px;
+	}
+}

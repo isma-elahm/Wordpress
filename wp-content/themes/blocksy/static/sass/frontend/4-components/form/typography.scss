@@ -1,0 +1,17 @@
+select,
+textarea,
+input:is([type='url'], [type='tel'], [type='text'], [type='time'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='number'], [type='search'], [type='password']),
+fieldset .wc-stripe-elements-field,
+.ff-inherit-theme-style .ff-el-form-control:not([size]):not([multiple]),
+
+span.select2-dropdown,
+span.select2-container .select2-selection--single .select2-selection__rendered {
+	font-family: var(--theme-form-font-family);
+	font-size: var(--theme-form-font-size, 16px);
+	font-weight: var(--theme-form-font-weight);
+	font-style: var(--theme-form-font-style, inherit);
+	line-height: var(--theme-form-line-height);
+	letter-spacing: var(--theme-form-letter-spacing);
+	text-transform: var(--theme-form-text-transform);
+	text-decoration: var(--theme-form-text-decoration);
+}

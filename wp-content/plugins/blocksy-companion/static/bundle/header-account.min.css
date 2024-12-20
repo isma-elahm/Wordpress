@@ -1,0 +1,8 @@
+/**
+ *  - v2.0.81
+ * 
+ * Copyright (c) 2024
+ * Licensed GPLv2+
+ */
+
+.ct-header-account .ct-account-item .ct-media-container{flex:0 0 var(--avatar-size, 18px);width:var(--avatar-size, 18px);height:var(--avatar-size, 18px);border-radius:100%}.ct-header-account .ct-account-item:not([href]){cursor:pointer;color:var(--theme-link-initial-color);transition:var(--theme-transition)}.ct-header-account .ct-account-item:not([href]):hover{color:var(--theme-link-hover-color)}

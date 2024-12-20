@@ -1,0 +1,24 @@
+.ct-query-template-grid {
+	display: grid;
+	gap: var(--grid-columns-gap, 30px);
+	grid-template-columns: repeat(var(--grid-columns-width), minmax(0, 1fr));
+}
+
+
+.is-layout-slider {
+
+	.flexy-items {
+		--flexy-items-gap: var(--grid-columns-gap, 30px);
+		--flexy-item-width: var(--grid-columns-width);
+	}
+
+    .flexy-item {
+		display: flex;
+
+		// don not remove this width
+		// https://creativethemes.slack.com/archives/GTG15AXAQ/p1732721539849779
+		> * {
+			width: 100%;
+		}
+    }
+}

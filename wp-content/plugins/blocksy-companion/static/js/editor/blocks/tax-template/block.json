@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/tax-template",
+	"parent": ["blocksy/tax-query"],
+	"title": "Tax Template",
+	"category": "theme",
+	"description": "Contains the block elements used to render a taxonomy, like the title, date, featured image, content or excerpt, and more.",
+	"textdomain": "default",
+	"supports": {
+		"reusable": false,
+		"html": false,
+		"layout": false,
+		"spacing": {
+			"blockGap": {
+				"__experimentalDefault": "1.25em"
+			},
+			"__experimentalDefaultControls": {
+				"blockGap": true
+			}
+		}
+	},
+
+	"attributes": {
+		"tabletColumns": {
+			"type": "number",
+			"default": 2
+		},
+		"mobileColumns": {
+			"type": "number",
+			"default": 1
+		},
+		"verticalAlignment": {
+			"type": "string"
+		},
+		"layout": {
+			"type": "object"
+		}
+	},
+
+	"usesContext": [
+		"uniqueId",
+		"taxonomy",
+		"limit",
+		"order",
+		"orderby",
+		"offset",
+		"include_term_ids",
+		"exclude_term_ids",
+
+		"has_slideshow",
+		"has_slideshow_arrows",
+		"has_slideshow_autoplay",
+		"has_slideshow_autoplay_speed"
+	]
+}

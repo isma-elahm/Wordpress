@@ -1,0 +1,29 @@
+p {
+	margin-block-end: var(--theme-content-spacing);
+}
+
+ul, ol {
+	padding-inline-start: var(--theme-list-indent);
+	margin-block-end: var(--theme-content-spacing);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+
+	&:where(:last-child) {
+		margin-block-end: 0;
+	}
+}
+
+
+:is(.is-layout-flow, .is-layout-constrained) {
+
+	> *:where(:not(h1, h2, h3, h4, h5, h6)) {
+		margin-block-start: 0;
+		margin-block-end: var(--theme-content-spacing);
+	}
+
+	:where(h1, h2, h3, h4, h5, h6) {
+		margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+	}
+}

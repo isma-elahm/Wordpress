@@ -1,0 +1,40 @@
+// add space between widget areas in Appearance -> Widgets
+.edit-widgets-main-block-list {
+
+	> .wp-block {
+		margin-bottom: 20px;
+
+		&:first-child {
+			margin-top: 20px;
+		}
+	}
+}
+
+
+// add space between block in widget area
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout {
+
+	> .wp-block {
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+}
+
+
+// remove `ul` styles in widgets preview/editor
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout {
+
+	> ul.wp-block-list,
+	ul.wp-block-page-list,
+	ul.wp-block-categories-list,
+	ul.wc-block-product-categories-list {
+		margin-inline: 0;
+		list-style-type: none;
+		padding-inline-start: 0;
+
+		ul {
+			list-style-type: none;
+			padding-inline-start: 25px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.menu-container ul,
+.entry-meta,
+.ct-account-modal > ul,
+.ct-language-switcher ul,
+[class*=ct-contact-info] ul,
+.products:is(ul),
+.woocommerce-Reviews :where(ol, ul),
+.ct-comments :where(ol, ul),
+.ct-comments ul,
+.woocommerce-tabs > ul,
+.wc-item-meta,
+.ct-header-account ul,
+.ct-product-additional-info ul,
+.woocommerce-pagination .page-numbers,
+.wc-block-review-list,
+.woocommerce-mini-cart,
+.woocommerce-MyAccount-navigation ul,
+.wp-block-latest-comments,
+.ct-filter-widget,
+.ct-compare-bar ul,
+.ct-product-hero ul,
+.ct-widget ul,
+.ct-added-to-cart-product ul {
+	list-style-type: none;
+	margin-bottom: 0;
+	padding-inline-start: 0;
+}

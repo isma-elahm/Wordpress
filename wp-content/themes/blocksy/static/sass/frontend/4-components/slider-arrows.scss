@@ -1,0 +1,35 @@
+.ct-slider-arrows {
+	display: flex;
+
+	span {
+		position: relative;
+		z-index: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		width: var(--slider-arrow-button-size, 26px);
+		height: var(--slider-arrow-button-size, 26px);
+		color: var(--theme-text-color);
+		border: 1px solid var(--theme-border-color);
+		transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:hover {
+			z-index: 1;
+			color: var(--theme-button-text-hover-color);
+			background: var(--theme-button-background-hover-color);
+			border-color: var(--theme-button-background-hover-color);
+		}
+	}
+
+	.ct-arrow-prev {
+		margin-inline-end: -1px;
+		border-start-start-radius: 3px;
+		border-end-start-radius: 3px;
+	}
+
+	.ct-arrow-next {
+		border-start-end-radius: 3px;
+		border-end-end-radius: 3px;
+	}
+}

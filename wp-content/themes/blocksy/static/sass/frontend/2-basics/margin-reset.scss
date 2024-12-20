@@ -1,0 +1,16 @@
+ul, ol,
+ul li, ol li,
+label,
+.ct-widget p,
+.entry-excerpt *,
+.wp-block-columns,
+.ct-dynamic-data p,
+[class*="ct-form-notification"] p,
+.ct-product-description p,
+.woocommerce-variation-description p,
+.woocommerce-variation-availability p {
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

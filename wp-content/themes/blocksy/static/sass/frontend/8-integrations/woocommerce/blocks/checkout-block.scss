@@ -1,0 +1,16 @@
+.wc-block-checkout {
+
+	// summary block
+	.wp-block-woocommerce-checkout-totals-block .wp-block-woocommerce-checkout-order-summary-block {
+
+		// checkout items badge
+		.wc-block-components-order-summary-item__quantity {
+			font-size: 10px;
+			font-weight: 600;
+			color: #fff;
+			border: none;
+			box-shadow: none;
+			background: var(--theme-palette-color-1);
+		}
+	}
+}

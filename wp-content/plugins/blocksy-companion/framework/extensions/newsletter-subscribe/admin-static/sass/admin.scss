@@ -1,0 +1,17 @@
+@import "../../static/sass/main.scss";
+
+.ct-newsletter-subscribe-block {
+
+	.wp-element-button {
+		border: none;
+		box-sizing: border-box;
+	}
+
+	.gdpr-confirm-policy {
+		pointer-events: none;
+
+		label {
+			font-size: 13px;
+		}
+	}
+}

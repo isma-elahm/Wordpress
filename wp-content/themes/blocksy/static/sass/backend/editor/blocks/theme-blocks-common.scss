@@ -1,0 +1,89 @@
+.ct-social-box,
+.ct-posts-block,
+.ct-dynamic-data,
+.ct-about-me-block,
+.ct-contact-info-block,
+.wp-block-blocksy-share-box {
+	a {
+		pointer-events: none;
+		text-decoration: none;
+	}
+}
+
+.ct-posts-block,
+.ct-contact-info-block {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.ct-about-me-block {
+	img {
+		object-fit: cover;
+		border-radius: inherit;
+	}
+}
+
+// advanced posts & taxonomies
+.wp-block-blocksy-query,
+.wp-block-blocksy-tax-query,
+.wp-block-blocksy-content-block {
+	box-sizing: border-box;
+
+	a {
+		pointer-events: none;
+		text-decoration: none;
+	}
+
+	.components-placeholder {
+		min-height: 200px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.components-placeholder__label {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	.components-placeholder__fieldset {
+		text-align: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		border: none;
+		box-sizing: border-box;
+
+		.components-placeholder__instructions {
+			margin-bottom: 2em;
+		}
+	}
+
+	.ct-content-block-select {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	// slider view
+	.is-layout-slider {
+
+		.flexy-item,
+		.entry-card {
+			box-sizing: border-box;
+		}
+
+		.flexy-item {
+			cursor: initial;
+		}
+	}
+}
+
+.ct-components-panel__row-full-width {
+	align-items: stretch;
+	flex-direction: column;
+
+	.components-button {
+		justify-content: center;
+	}
+}

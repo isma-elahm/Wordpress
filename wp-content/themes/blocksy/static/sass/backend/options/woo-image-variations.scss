@@ -1,0 +1,18 @@
+.woocommerce_variable_attributes .form-row {
+	margin-bottom: 1.5em;
+}
+
+.ct-variation-image-gallery {
+	padding-bottom: 0.8em;
+	border-top: 1px solid #eee;
+	--options-horizontal-spacing: 0;
+	--optionBorderColor: #eee;
+
+	[data-design="inline"] {
+		grid-template-columns: calc(52% - 10px) min(48%, 450px) auto;
+
+		// .ct-attachment-multi {
+		// 	text-align: right;
+		// }
+	}
+}

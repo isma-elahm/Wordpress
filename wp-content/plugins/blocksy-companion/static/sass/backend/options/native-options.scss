@@ -1,0 +1,59 @@
+.form-table .ct-term-screen-edit {
+
+	th label {
+		display: flex;
+		align-items: center;
+		position: relative;
+		pointer-events: none;
+		--revert-button-offset: 17px;
+	}
+
+	.ct-attachment,
+	.ct-select-input,
+	.ct-option-input,
+	.ct-radio-option,
+	.ct-color-picker-container {
+		max-width: 95%;
+		margin-bottom: 8px;
+	}
+
+	.ct-color-picker-container {
+		justify-content: flex-start;
+	}
+
+	.ct-option-switch {
+		margin-inline-start: initial;
+	}
+}
+
+
+// advanced reviews title & images
+#reviews-filter table.product-reviews .column-comment {
+
+	.ct-review-title {
+		color: #50575e;
+		font-size: 13px;
+		margin: 0 0 10px 0;
+	}
+
+	.ct-review-images {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-block: 15px 10px;
+
+		figure {
+			width: 40px;
+			height: 40px;
+			margin: 0;
+
+			img {
+				aspect-ratio: 1/1;
+				height: auto;
+				object-fit: cover;
+				border-radius: 2px;
+			}
+		}
+	}
+}

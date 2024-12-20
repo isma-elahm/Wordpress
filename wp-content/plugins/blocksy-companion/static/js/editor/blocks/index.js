@@ -1,0 +1,12 @@
+import './breadcrumbs'
+import './query'
+import './tax-query'
+import './post-template/index'
+import './tax-template/index'
+import './about-me'
+import './contact-info'
+import './socials'
+import './share-box'
+import './dynamic-data'
+
+import './search'

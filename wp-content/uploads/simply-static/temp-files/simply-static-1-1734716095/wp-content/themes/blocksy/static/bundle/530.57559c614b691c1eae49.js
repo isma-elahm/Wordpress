@@ -1,0 +1,1 @@
+"use strict";(self.blocksyJsonP=self.blocksyJsonP||[]).push([[530],{3530:function(s,n,o){o.r(n),o.d(n,{mount:function(){return t}});const t=function(){window.gsInitTabs&&window.gsInitTabs(".gspb-tabs")}}}]);

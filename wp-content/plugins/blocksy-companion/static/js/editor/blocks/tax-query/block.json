@@ -1,0 +1,145 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/tax-query",
+	"category": "blocksy-blocks",
+	"attributes": {
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		},
+
+		"taxonomy": {
+			"type": "string",
+			"default": "category"
+		},
+
+		"limit": {
+			"type": "number",
+			"default": 5
+		},
+
+		"include_term_ids": {
+			"type": "object",
+			"default": {}
+		},
+
+		"exclude_term_ids": {
+			"type": "object",
+			"default": {}
+		},
+
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+
+		"orderby": {
+			"type": "string",
+			"default": "none"
+		},
+
+		"offset": {
+			"type": "number",
+			"default": 0
+		},
+
+		"design": {
+			"type": "string",
+			"default": ""
+		},
+
+		"textColor": {
+			"type": "string"
+		},
+		"customTextColor": {
+			"type": "string"
+		},
+		"linkColor": {
+			"type": "string"
+		},
+		"customLinkColor": {
+			"type": "string"
+		},
+		"linkHoverColor": {
+			"type": "string"
+		},
+		"customLinkHoverColor": {
+			"type": "string"
+		},
+
+		"has_slideshow": {
+			"type": "string",
+			"default": "no"
+		},
+
+		"has_slideshow_arrows": {
+			"type": "string",
+			"default": "yes"
+		},
+
+		"has_slideshow_autoplay": {
+			"type": "string",
+			"default": "no"
+		},
+
+		"has_slideshow_autoplay_speed": {
+			"type": "number",
+			"default": 3
+		}
+	},
+
+	"supports": {
+		"align": ["wide", "full"],
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"margin": false,
+				"padding": false
+			}
+		},
+
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"width": true
+			},
+			"__experimentalSelector": "img, .block-editor-media-placeholder, .wp-block-post-featured-image__overlay",
+			"__experimentalSkipSerialization": true
+		},
+
+		"color": {
+			"gradients": true,
+			"link": false,
+			"__experimentalDefaultControls": {
+				"text": false,
+				"background": true,
+				"link": false
+			}
+		}
+	},
+
+	"usesContext": ["postId", "postType"],
+	"providesContext": {
+		"uniqueId": "uniqueId",
+		"taxonomy": "taxonomy",
+		"limit": "limit",
+		"order": "order",
+		"orderby": "orderby",
+		"offset": "offset",
+
+		"include_term_ids": "include_term_ids",
+		"exclude_term_ids": "exclude_term_ids",
+
+		"has_slideshow": "has_slideshow",
+		"has_slideshow_arrows": "has_slideshow_arrows",
+		"has_slideshow_autoplay": "has_slideshow_autoplay",
+		"has_slideshow_autoplay_speed": "has_slideshow_autoplay_speed"
+	}
+}

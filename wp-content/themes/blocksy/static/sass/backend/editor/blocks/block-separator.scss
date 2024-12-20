@@ -1,0 +1,14 @@
+.wp-block-separator {
+	border: none;
+	margin-inline: auto;
+	color: var(--theme-form-field-border-initial-color);
+
+	&:not(:where(.is-style-wide, .is-style-dots, .alignfull, .alignwide)) {
+		max-width: 100px !important;
+	}
+
+	&:not(.is-style-dots) {
+		height: 2px;
+		background-color: currentColor;
+	}
+}

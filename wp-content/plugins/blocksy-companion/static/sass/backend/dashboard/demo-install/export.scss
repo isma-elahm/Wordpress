@@ -1,0 +1,92 @@
+.ct-site-export-modal {
+	--modal-width: 700px;
+}
+
+.ct-site-export-settings {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+
+	section {
+
+		&.has-divider {
+			position: relative;
+			padding-bottom: 30px;
+
+			&:before {
+				position: absolute;
+				content: "";
+				bottom: 0;
+				inset-inline-start: calc(var(--modal-padding)* -1);
+				height: 1px;
+				width: var(--modal-width);
+				background: var(--optionBorderColor);
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	label {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+		cursor: pointer;
+
+		.ct-label {
+			color: #3e5667;
+			font-weight: 600;
+		}
+	}
+
+	input[type="checkbox"] {
+		margin: 0;
+	}
+
+	textarea,
+	input[type="text"] {
+		&:not(:focus) {
+			border-color: #e7e5e5;
+		}
+	}
+
+	input[type="text"] {
+		width: 60%;
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 80px;
+	}
+
+	.grid-labels {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 12px;
+		margin-top: 15px;
+
+		label {
+			justify-content: initial;
+			align-items: center;
+			// font-weight: 500;
+			padding: 10px 15px;
+			border-radius: 3px;
+			background: #f5f7f9;
+
+			input {
+				display: none;
+			}
+
+			&:hover {
+				background: #eef0f2;
+			}
+
+			&:has(input:checked) {
+				color: #fff;
+				background: var(--ui-accent-color);
+			}
+		}
+	}
+}

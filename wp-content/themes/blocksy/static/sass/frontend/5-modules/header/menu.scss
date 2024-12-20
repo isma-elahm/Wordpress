@@ -1,0 +1,14 @@
+[class*="header-menu"] {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	min-width: 0;
+
+	.menu {
+		height: inherit;
+
+		> li > .ct-menu-link {
+			white-space: nowrap;
+		}
+	}
+}
